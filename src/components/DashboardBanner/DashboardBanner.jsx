@@ -13,7 +13,7 @@ const DashboardBanner = () => {
                                 Explore the latest gadgets that will take your experience to <br /> the next level. From smart devices to the coolest accessories, we have it all!
                             </p>
                             <div className="">
-                        <NavLink to="cart"  className={({ isActive }) => (isActive ? 'btn py-3 px-14 rounded-4xl font-semibold text-lg  bg-white text-green-400' : 'btn bg-transparent py-3 px-14 rounded-4xl font-semibold text-lg')}>Cart</NavLink>
+                        <NavLink to="cart" end className={({ isActive }) => (isActive ? 'btn py-3 px-14 rounded-4xl font-semibold text-lg  bg-white text-green-400 mr-2' : 'mr-2 btn bg-transparent py-3 px-14 rounded-4xl font-semibold text-lg')}>Cart</NavLink>
                         <NavLink to="wishlist"  className={({ isActive }) => (isActive ? 'btn py-3 px-14 rounded-4xl font-semibold text-lg bg-white text-green-400' : 'btn bg-transparent py-3 px-14 rounded-4xl font-semibold text-lg ')}>Wish</NavLink>
                         </div>
                         </div>

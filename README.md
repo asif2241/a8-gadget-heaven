@@ -1,8 +1,27 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Project Name: GadgetHeaven
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+GadgetHeaven is a React-based e-commerce platform where users can browse, filter, and purchase gadgets. It features a structured navigation system, a shopping cart, a wishlist, and dynamic product filtering.
+
+
+## Technology Used:
+
+React JS (with Context API & LocalStorage),
+Tailwind CSS & DaisyUI,
+React Router for navigation,
+Recharts for data visualization
+
+
+## Key Features
+
+ - Category-based Filtering – View gadgets by category via a sidebar.
+ - Product Details & Wishlist – Save favorites & prevent duplicates.
+ - Shopping Cart – Add/remove items & sort by price.
+ - Dynamic UI – Responsive design following a Figma prototype.
+ - Statistics Page – Visualizes product prices using Recharts.
+
+
+## Live Site Link
+
+https://blue-fight.surge.sh/

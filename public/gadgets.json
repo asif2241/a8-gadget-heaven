@@ -152,6 +152,86 @@
       "Specification": ["AMOLED Display", "ECG & EDA Sensor", "Google Assistant"],
       "availability": true,
       "rating": 4.6
-    }
+    },
+    
+      {
+        "product_id": 15,
+        "product_title": "Sony WF-1000XM4",
+        "product_image": "https://i.ibb.co.com/5X04T4Rv/Sony-WF-1000-XM4.jpg",
+        "category": "Accessories",
+        "price": 279,
+        "description": "Industry-leading noise-canceling earbuds with exceptional sound quality.",
+        "Specification": ["ANC", "LDAC Support", "24-hour Battery Life", "Wireless Charging"],
+        "availability": true,
+        "rating": 4.8
+      },
+      {
+        "product_id": 16,
+        "product_title": "Apple AirPods Pro (2nd Gen)",
+        "product_image": "https://i.ibb.co.com/5Xf0zqB7/apple-airpods-pro-2nd-gen-1.webp",
+        "category": "Accessories",
+        "price": 249,
+        "description": "Next-gen AirPods Pro with adaptive transparency and improved ANC.",
+        "Specification": ["H2 Chip", "Spatial Audio", "Touch Controls", "MagSafe Charging"],
+        "availability": true,
+        "rating": 4.9
+      },
+      {
+        "product_id": 17,
+        "product_title": "Samsung Galaxy Buds 2 Pro",
+        "product_image": "https://i.ibb.co.com/zTw9XnY6/Samsung-Galaxy-Buds-2-Pro.jpg",
+        "category": "Accessories",
+        "price": 229,
+        "description": "Hi-Fi sound, ANC, and 360 Audio for an immersive experience.",
+        "Specification": ["Hi-Fi Sound", "360 Audio", "ANC", "Bluetooth 5.3"],
+        "availability": true,
+        "rating": 4.7
+      },
+      {
+        "product_id": 18,
+        "product_title": "Anker PowerCore 26800mAh",
+        "product_image": "https://i.ibb.co.com/twrTvDzb/Anker-Power-Core-26800m-Ah.png",
+        "category": "Accessories",
+        "price": 65,
+        "description": "A high-capacity power bank with dual USB ports for fast charging.",
+        "Specification": ["26800mAh", "Dual USB Output", "PowerIQ", "Fast Charging"],
+        "availability": true,
+        "rating": 4.8
+      },
+      {
+        "product_id": 19,
+        "product_title": "RAVPower 20000mAh PD Power Bank",
+        "product_image": "https://i.ibb.co.com/pvPNBfbP/RAVPower-20000m-Ah-PD-Power-Bank.webp",
+        "category": "Accessories",
+        "price": 55,
+        "description": "A portable power bank with 60W PD fast charging for laptops & phones.",
+        "Specification": ["20000mAh", "60W PD", "USB-C & USB-A", "Fast Charging"],
+        "availability": true,
+        "rating": 4.7
+      },
+      {
+        "product_id": 20,
+        "product_title": "Xiaomi Mi Power Bank 3 Pro",
+        "product_image": "https://i.ibb.co.com/N6CYKQtk/xiaomi-mi-3-pro-power-bank-bd.jpg",
+        "category": "Accessories",
+        "price": 49,
+        "description": "A sleek and powerful power bank with 45W USB-C charging support.",
+        "Specification": ["20000mAh", "45W USB-C PD", "QC 3.0", "Dual USB Output"],
+        "availability": true,
+        "rating": 4.6
+      },
+      {
+        "product_id": 21,
+        "product_title": "Belkin BoostCharge 10K",
+        "product_image": "https://i.ibb.co.com/fdwxhKRN/Belkin-Boost-Charge-10-K.jpg",
+        "category": "Accessories",
+        "price": 39,
+        "description": "A compact and lightweight 10000mAh power bank with fast charging.",
+        "Specification": ["10000mAh", "USB-C & USB-A", "Fast Charging", "Slim Design"],
+        "availability": true,
+        "rating": 4.5
+      }
+    
+    
   ]
   

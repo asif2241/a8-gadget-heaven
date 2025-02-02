@@ -1,10 +1,17 @@
-import { NavLink } from "react-router-dom"
+import { useContext } from "react"
+import { Link, NavLink } from "react-router-dom"
+import { CartContext } from "./Contexts/CartContext"
+import { WishlistContext } from "./Contexts/WishlistContext";
 
 
 export const Navbar = () => {
+
+  const [cart] = useContext(CartContext);
+  const  [wishlist] = useContext(WishlistContext);
+
   const links = <>
   <li><NavLink to="/">Home</NavLink></li>
-  <li><NavLink >Statistics</NavLink></li>
+  <li><NavLink to="statistics" >Statistics</NavLink></li>
   <li><NavLink to="dashboard">Dashboard</NavLink></li>
   
   </>
@@ -45,14 +52,14 @@ export const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end gap-2">
-    <div className="items-center relative p-2 rounded-full border border-gray-300">
-      <span className="absolute -top-2 -right-1 text-lg text-gray-600">0</span>
+    <Link to="/dashboard/cart" className="items-center relative p-2 rounded-full border border-gray-300">
+      <span className="absolute -top-2 -right-1 font-medium text-lg text-gray-600">{cart.length}</span>
       <img className="w-5 " src="https://img.icons8.com/?size=100&id=9671&format=png&color=000000" alt="" />
-    </div>
-    <div className="items-center relative p-2 rounded-full border border-gray-300">
-      <span className="absolute -top-2 -right-1 text-lg text-gray-600">0</span>
+    </Link>
+    <Link  to="/dashboard/wishlist" className="items-center relative p-2 rounded-full border border-gray-300">
+      <span className="absolute -top-2 -right-1 font-medium text-lg text-gray-600">{wishlist.length}</span>
       <img className="w-5 " src="https://img.icons8.com/?size=100&id=86721&format=png&color=000000" alt="" />
-    </div>
+    </Link>
   </div>
     </nav>
 </div>

@@ -1,7 +1,30 @@
+import { useContext } from "react";
 import {  useLoaderData, useParams } from "react-router-dom"
+import { CartContext } from "../Contexts/CartContext";
+import { WishlistContext } from "../Contexts/WishlistContext";
 
 
 const ProductDetails = () => {
+
+  const [cart, setCart] = useContext(CartContext);
+  const  [wishlist, setWishlist] = useContext(WishlistContext);
+
+  const handleCart = (id)=>{
+    if(cart.includes(id)){
+      console.log('alredy exist');
+      return
+    }
+     setCart([...cart, id])
+  }
+
+  const handleWishlist = (id)=>{
+    if(wishlist.includes(id)){
+      console.log('already exists in the wishlish');
+      return
+    }
+    setWishlist([...wishlist, id])
+  }
+    
   const {productId} = useParams()
   const id = parseInt(productId);
   const data = useLoaderData();
@@ -61,8 +84,8 @@ const ProductDetails = () => {
 </span>
   </div>
     <div className="card-actions">
-      <button className="btn btn-primary bg-[#9538E2] text-white">Add To Cart <span><img className="w-4" src="https://img.icons8.com/?size=100&id=9671&format=png&color=FFFFFF" alt="" /></span></button>
-      <div className="items-center relative p-2 rounded-full border border-gray-300 cursor-pointer">
+      <button onClick={()=>handleCart(id)} className="btn btn-primary bg-[#9538E2] text-white">Add To Cart <span><img className="w-4" src="https://img.icons8.com/?size=100&id=9671&format=png&color=FFFFFF" alt="" /></span></button>
+      <div onClick={()=>handleWishlist(id)} className="items-center relative p-2 rounded-full border border-gray-300 cursor-pointer">
 
       <img className="w-5 " src="https://img.icons8.com/?size=100&id=86721&format=png&color=000000" alt="" />
     </div>

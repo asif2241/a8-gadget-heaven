@@ -4,6 +4,7 @@ import GadgetCard from "../GadgetCard/GadgetCard";
 
 const GadgetCards = () => {
     const [gadgets, setGadgets] = useState([]);
+    
     useEffect(()=>{
         fetch('./gadgets.json')
         .then(res => res.json())
